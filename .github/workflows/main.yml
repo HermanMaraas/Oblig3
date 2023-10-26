@@ -1,10 +1,10 @@
-name: Python application
+name: Run tests
 
 on:
   push:
-    branches: ["master"]
+    branches: ["main"]
   pull_request:
-    branches: ["master"]
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -12,7 +12,7 @@ permissions:
 jobs:
   test:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v3
